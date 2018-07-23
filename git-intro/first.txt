@@ -1,2 +1,3 @@
-scriu ceva frumos si neutilzabil
+ceva ca nu e important
 am facut niste modificari remote
+hai ca vreau ceva conflicte
