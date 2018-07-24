@@ -1,1 +1,2 @@
 A doua incercare. Scriu si il push catre remote
+Acuma il iau de pe remote modificat
