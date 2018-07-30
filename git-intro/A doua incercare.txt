@@ -1,4 +1,0 @@
-A doua incercare. Scriu si il push catre remote
-Acuma il iau de pe remote modificat
-L-am modificat pe data de 30.07 ca sa mai fac o incercare
-
