@@ -3,9 +3,9 @@ import java.util.Date;
 class Card {
     private String iban;
     private Date expirationDate;
-    private int cardNumber;
+    private long cardNumber;
 
-    public Card(String iban, Date expirationDate, int cardNumber) {
+    public Card(String iban, Date expirationDate, long cardNumber) {
         this.iban = iban;
         this.expirationDate = expirationDate;
         this.cardNumber = cardNumber;
@@ -15,7 +15,7 @@ class Card {
 
     public Date getExpirationDate() { return expirationDate; }
 
-    public int getCardNumber() { return cardNumber; }
+    public long getCardNumber() { return cardNumber; }
 
     public boolean isValid(){ return expirationDate.compareTo(new Date()) > 0; }
 }

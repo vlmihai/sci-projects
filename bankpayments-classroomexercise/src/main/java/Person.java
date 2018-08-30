@@ -1,4 +1,6 @@
-public class Person {
+import java.util.ArrayList;
+
+class Person {
     //declarare
     private String firstname;
     private String lastname;
@@ -17,9 +19,13 @@ public class Person {
     String getLastname() {
         return lastname;
     }
-    long getCnp() {
-       return cnp;
-    }
+    long getCnp() { return cnp; }
+
+    private ArrayList<BankAccount> bankAccounts = new ArrayList<>();
+
+    public ArrayList<BankAccount> getBankAccounts() { return bankAccounts; }
+
+    void addBankAccount(BankAccount bankAccount) { bankAccounts.add(bankAccount); }
 
 }
 

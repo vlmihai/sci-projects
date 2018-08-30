@@ -11,18 +11,15 @@ public class Main {
             System.out.println(" " + users.getFirstname() + " " + users.getLastname() + " ; cnp: " + users.getCnp());
         }
 
-        BankAccount[] bankAccounts = new BankAccount[4];
-        bankAccounts[0] = new BankAccount(120, "RO61BTRLRONCRT0400355001", 5 );
-        bankAccounts[1] = new BankAccount(150, "RO14TREZ2165503XXXXXXXXX", 4);
-        bankAccounts[2] = new BankAccount(180, "RO14TREZ21620A470300XXXX", 4.5);
-        bankAccounts[3] = new BankAccount(150, "RO11RNCB0026152073040001", 4.2);
+        BankAccount btAccount = new BankAccount(120, "iban1");
+        user[0].addBankAccount(btAccount);
 
+        Card btCard = new Card("iban1", DateUtils.getDate(2018,10,31), 4444333322221111L);
 
-        bankAccounts[0].withdraw(20);
-        bankAccounts[0].deposit(120);
-        bankAccounts[0].addInterest();
-            System.out.println("\nNew balance for " + user[0].getFirstname() + " " + user[0].getLastname() + " " + bankAccounts[0].getIban() + " is: " + bankAccounts[0].getBalance());
+        Bancomat bancomat = new Bancomat();
 
     }
+
+
 
 }
