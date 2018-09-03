@@ -1,9 +1,10 @@
 import java.util.ArrayList;
-import java.util.List;
 
 class Bancomat {
 
-    private List<Card> cards = new ArrayList<>();
+    private ArrayList<Card> cards = new ArrayList<>();
+
+    void knowsAboutCard (Card card) { cards.add(card); }
 
     void withdraw(double amount, BankAccount bankAccount) {
         // iterate over all Cards and find out whether the Card is attached to an existing account.
@@ -13,11 +14,13 @@ class Bancomat {
                 // If so, reduces balance by amount; if not, prints message.
                 if (bankAccount.getBalance() >= amount) {
                     bankAccount.balance -= amount;
+                    System.out.println("Balance is: " + bankAccount.getBalance());
                 } else {
-                    System.out.println("\nInsufficient funds");
+                    System.out.println("\nInsufficient funds. You are trying to withdraw: " + amount + " while balance is " + bankAccount.getBalance());
                 }
+            } else {
+                System.out.println("\nBank Account Not Found");
             }
-            System.out.println("\nBank Account Not Found");
         }
     }
 
@@ -27,6 +30,9 @@ class Bancomat {
                 if (card.getIban().equals(bankAccount.getIban())) {
                     // Method that adds deposit amount to balance.
                     bankAccount.balance += amount;
+                    System.out.println("Balance is: " + bankAccount.getBalance());
+                } else {
+                    System.out.println("\nBank Account Not Found");
                 }
         }
     }

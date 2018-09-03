@@ -25,7 +25,8 @@ public class Main {
                  "\n"+ btAccount.getCards()); */
 
         Bancomat bancomat = new Bancomat();
-        bancomat.withdraw(150, btAccount);
-        System.out.println("\nBalance is: " + btAccount.getBalance());
+        bancomat.knowsAboutCard(btCard);
+        bancomat.withdraw(200, btAccount);
+        bancomat.deposit(80, btAccount);
     }
 }
