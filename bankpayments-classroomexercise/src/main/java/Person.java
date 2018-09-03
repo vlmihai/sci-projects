@@ -23,7 +23,7 @@ class Person {
 
     private ArrayList<BankAccount> bankAccounts = new ArrayList<>();
 
-    public ArrayList<BankAccount> getBankAccounts() { return bankAccounts; }
+    ArrayList<BankAccount> getBankAccounts() { return bankAccounts; }
 
     void addBankAccount(BankAccount bankAccount) { bankAccounts.add(bankAccount); }
 

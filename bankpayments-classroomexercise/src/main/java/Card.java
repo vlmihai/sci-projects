@@ -11,6 +11,15 @@ class Card {
         this.cardNumber = cardNumber;
     }
 
+    @Override
+    public String toString() {
+        return "Card{" +
+                "iban='" + iban + '\'' +
+                ", expirationDate=" + expirationDate +
+                ", cardNumber=" + cardNumber +
+                '}';
+    }
+
     String getIban() { return iban; }
 
     public Date getExpirationDate() { return expirationDate; }

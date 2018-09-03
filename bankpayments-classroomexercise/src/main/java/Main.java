@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -18,12 +16,16 @@ public class Main {
         user[0].addBankAccount(btAccount);
         user[0].addBankAccount(btAccount1);
         Card btCard = new Card("iban1", DateUtils.getDate(2018,10,31), 4444333322221111L);
+        Card btCard1 = new Card("iban2",DateUtils.getDate(2018, 11, 28), 5555444433332222L);
         btAccount.addCard(btCard);
+        btAccount.addCard(btCard1);
 
-        System.out.println("\nConturile inregistrate pentru Lucian Voicu sunt: " + user[0].getBankAccounts());
+        /* System.out.println("\nConturile inregistrate pentru Lucian Voicu sunt: " + user[0].getBankAccounts());
+        System.out.println("\nCardurile inregistrate pentru contul: " + btAccount + " sunt:" +
+                 "\n"+ btAccount.getCards()); */
 
         Bancomat bancomat = new Bancomat();
         bancomat.withdraw(150, btAccount);
-        System.out.println(" " + btAccount.getBalance());
+        System.out.println("\nBalance is: " + btAccount.getBalance());
     }
 }
