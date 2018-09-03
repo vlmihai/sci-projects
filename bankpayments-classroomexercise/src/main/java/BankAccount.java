@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class BankAccount {
     double balance;
     private String iban;
@@ -9,9 +12,19 @@ class BankAccount {
         this.iban = iban;
     }
 
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "balance=" + balance +
+                ", iban='" + iban + '\'' +
+                '}';
+    }
+
     double getBalance() {
         return balance;
     }
+
+    double setBalance (double balance) { return this.balance = balance; }
 
     String getIban() {
         return iban;
@@ -26,5 +39,11 @@ class BankAccount {
         balance += balance * anualInterestRate/100;
         return balance;
     }
+
+    private List<Card> cards = new ArrayList<>();
+
+    List<Card> getCards() { return cards; }
+
+    void addCard (Card card) { cards.add(card); }
 }
 

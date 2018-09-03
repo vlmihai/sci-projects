@@ -5,13 +5,13 @@ class Card {
     private Date expirationDate;
     private long cardNumber;
 
-    public Card(String iban, Date expirationDate, long cardNumber) {
+    Card(String iban, Date expirationDate, long cardNumber) {
         this.iban = iban;
         this.expirationDate = expirationDate;
         this.cardNumber = cardNumber;
     }
 
-    public String getIban() { return iban; }
+    String getIban() { return iban; }
 
     public Date getExpirationDate() { return expirationDate; }
 

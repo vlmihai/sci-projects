@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,19 +9,21 @@ public class Main {
         user[2] = new Person("Dan", "Voicu", 182010830032L);
         user[3] = new Person("Cristina", "Jurconi", 282010830032L);
 
-        for (Person users : user) {
+        /* for (Person users : user) {
             System.out.println(" " + users.getFirstname() + " " + users.getLastname() + " ; cnp: " + users.getCnp());
-        }
+        } */
 
         BankAccount btAccount = new BankAccount(120, "iban1");
+        BankAccount btAccount1 = new BankAccount(220,"iban2");
         user[0].addBankAccount(btAccount);
-
+        user[0].addBankAccount(btAccount1);
         Card btCard = new Card("iban1", DateUtils.getDate(2018,10,31), 4444333322221111L);
+        btAccount.addCard(btCard);
+
+        System.out.println("\nConturile inregistrate pentru Lucian Voicu sunt: " + user[0].getBankAccounts());
 
         Bancomat bancomat = new Bancomat();
-
+        bancomat.withdraw(150, btAccount);
+        System.out.println(" " + btAccount.getBalance());
     }
-
-
-
 }
