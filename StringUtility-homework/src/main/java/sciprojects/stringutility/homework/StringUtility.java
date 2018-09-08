@@ -23,9 +23,6 @@ class StringUtility {
      */
 
     String sentanceReplace (Sentances sentance) {
-        List<String> strings = Arrays.asList("one","two","three","four","five","six","seven","eight","nine");
-        List<String> strings1 = Arrays.asList(" one"," two"," three"," four"," five"," six"," seven"," eight"," nine");
-
         String sentance1 = sentance.getSentance().replaceAll("\\s(?i)one", " 1").
                 replaceAll("\\s(?i)two", " 2").replaceAll("\\s(?i)three", " 3").
                 replaceAll("\\s(?i)four", " 4").replaceAll("\\s(?i)five", "5").
