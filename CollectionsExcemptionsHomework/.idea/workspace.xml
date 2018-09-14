@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="180cfb32-69dd-4890-a715-dba3f58c195b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,38 +20,39 @@
     <session id="1997752364">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.114" value="1" />
           <entry key="project.open.time.147" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="8" />
-          <entry key="java" value="20" />
+          <entry key="java" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="8" />
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="478" />
           <entry key="dummy" value="25" />
-          <entry key="java" value="5658" />
+          <entry key="java" value="5744" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="478" />
-          <entry key="JAVA" value="5658" />
+          <entry key="JAVA" value="5744" />
           <entry key="PLAIN_TEXT" value="25" />
         </counts>
       </usages-collector>
@@ -67,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="361">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -76,17 +72,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="191">
+              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+              <folding>
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeSorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="86">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +103,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+            <state relative-caret-position="68">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="57" />
+              <folding>
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,14 +152,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Employees.csv" />
         <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EmployeeReader.java" />
         <option value="$PROJECT_DIR$/Test.csv" />
-        <option value="$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SortingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmployeeSorter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EmployeeSorterTest2.java" />
         <option value="$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EmployeeReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java" />
       </list>
     </option>
   </component>
@@ -178,8 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,14 +226,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536925017477" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536928145269" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sci" />
   </component>
   <component name="RecentsManager">
@@ -306,10 +310,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EmployeeSorterTest" />
+        <item itemvalue="JUnit.EmployeeReaderTest" />
         <item itemvalue="JUnit.EmployeeSorterTest.employeeList" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.EmployeeSorterTest.employeeSorter" />
-        <item itemvalue="JUnit.EmployeeReaderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -327,24 +331,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 13h 42m 45s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 13h 48m 53s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 14h 01m 31s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 14h 02m 04s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 14h 04m 22s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 14h 19m 19s.xml">
-      <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="EmployeeSorterTest_employeeList - 2018.09.14 at 14h 21m 02s.xml">
       <configuration name="EmployeeSorterTest.employeeList" configurationId="JUnit" />
     </history-entry>
@@ -357,12 +343,29 @@
     <history-entry file="EmployeeSorterTest - 2018.09.14 at 14h 24m 09s.xml">
       <configuration name="EmployeeSorterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="EmployeeSorterTest - 2018.09.14 at 15h 22m 39s.xml">
+      <configuration name="EmployeeSorterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeSorterTest - 2018.09.14 at 15h 23m 21s.xml">
+      <configuration name="EmployeeSorterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeReaderTest - 2018.09.14 at 15h 25m 39s.xml">
+      <configuration name="EmployeeReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeReaderTest - 2018.09.14 at 15h 26m 48s.xml">
+      <configuration name="EmployeeReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeReaderTest - 2018.09.14 at 15h 28m 36s.xml">
+      <configuration name="EmployeeReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmployeeSorterTest - 2018.09.14 at 15h 28m 54s.xml">
+      <configuration name="EmployeeSorterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -390,24 +393,24 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
     </layout>
     <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -465,20 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -489,27 +478,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="86">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeReader.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeSorterTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="170">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmployeeReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="361">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EmployeeSorterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="57" />
+          <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

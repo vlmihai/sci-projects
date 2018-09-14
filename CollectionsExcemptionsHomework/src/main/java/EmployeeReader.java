@@ -22,6 +22,7 @@ class EmployeeReader {
             employees.add(parsePlayer(line));
             line = br.readLine();
         }
+        System.out.println(employees);
         return employees;
     }
 

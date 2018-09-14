@@ -20,7 +20,7 @@ class EmployeeSorter {
         }
     }
 
-    // creates list based on position within the company
+    // creates map based on position within the company
     Map<String, List<Employee>> employeeList (List<Employee> employeesByPosition) {
         Map<String,List<Employee>> map = employeesByPosition.stream().collect(Collectors.groupingBy(Employee::getPosition));
         TreeMap<String,List<Employee>> treeMap = new TreeMap<>(map);
