@@ -16,33 +16,12 @@ public class Main {
         if (!f.exists()) {
             System.out.println("File " + f.getName() + " does not exist.");
         }
-    /**
-     * Sorts Employee list based on seniority and name.
-     * Prints to console employees without parking space.
-     */
 
         FileReader fr = new FileReader(f);
+        EmployeeSorter employeeSorter = new EmployeeSorter();
         List<Employee> employees = new EmployeeReader(fr).getEmployees();
-        employees.sort(Employee.seniorityComparator.thenComparing(Employee::getName));
-        for (Employee employee : employees) {
-            if(employee.hasParkingspace().equals("no")) {
-                System.out.println(employee);
-            }
-        }
+        employeeSorter.employeeSorter(employees);
+        employeeSorter.employeeList(employees);
 
-        /**
-         * Creates individual lists based on position.
-         */
-
-        List<Employee> businessdevelopment = employees.stream()
-                .filter(employee -> employee.getPosition().equals("Business Development"))
-                .collect(Collectors.toList());
-                System.out.println("\nBusiness Development: " + businessdevelopment);
-
-        List<Employee> businessassociate = employees.stream()
-                .filter(employee -> employee.getPosition().equals("Business Associate"))
-                .collect(Collectors.toList());
-                System.out.println("\nBusiness Associate: " + businessassociate);
     }
-
 }

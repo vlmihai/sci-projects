@@ -1,8 +1,5 @@
-import java.io.FileReader;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class Employee {
     private String name;
@@ -21,7 +18,7 @@ public class Employee {
 
     String getPosition() { return position; }
 
-    double getSeniority() { return seniority; }
+    private double getSeniority() { return seniority; }
 
     String hasParkingspace() { return parkingspace; }
 
@@ -47,6 +44,14 @@ public class Employee {
         return Name1.compareTo(Name2);
     };
 
+    static Comparator<Employee> positionComparator = (s1, s2) -> {
+        String Position1 = s1.getPosition();
+        String Position2 = s2.getPosition();
+        //ascending order
+        return Position1.compareTo(Position2);
+    };
+
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -63,7 +68,7 @@ public class Employee {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         return seniority == employee.seniority &&
-                parkingspace == employee.parkingspace &&
+                parkingspace.equals(employee.parkingspace) &&
                 Objects.equals(name, employee.name) &&
                 Objects.equals(position, employee.position);
     }
