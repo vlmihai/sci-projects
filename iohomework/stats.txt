@@ -1,0 +1,48 @@
+Product Sales by Units Sold: 
+1. HTC U12 - 30 units
+2. Apple iPhone 8 - 28 units
+3. Oneplus X - 26 units
+4. Google Pixel 2 - 24 units
+5. LG G7 Thinq - 22 units
+6. Samsung Galaxy Note 8 - 19 units
+7. Apple iPhone X - 17 units
+8. Samsung Galaxy S9 - 16 units
+9. Huawei P20 Pro - 14 units
+10. Samsung Galaxy Note 9 - 12 units
+...
+Product Sales by Income: 
+1. HTC U12 - $12000
+2. Apple iPhone 8 - $8400
+3. Samsung Galaxy Note 9 - $6000
+4. Oneplus X - $5720
+5. Google Pixel 2 - $5040
+6. LG G7 Thinq - $4620
+7. Samsung Galaxy Note 8 - $1995
+8. Apple iPhone X - $1700
+9. Samsung Galaxy S9 - $1600
+10. Huawei P20 Pro - $1400
+...
+Product Sales by Client: 
+1. Alexandru Voicu - 30 units
+2. Dragos Nitescu - 26 units
+3. Bogdan Neacsu - 24 units
+4. Carla Szabo - 22 units
+5. Lucian Voicu - 22 units
+6. Ciprian Soare - 21 units
+7. Robert Jinga - 21 units
+8. Cristina Jurconi - 19 units
+9. Dan Voicu - 14 units
+10. Bogdan Nitescu - 9 units
+...
+Amount Spent by Client: 
+1. Ciprian Soare - $9500
+2. Robert Jinga - $8500
+3. Lucian Voicu - $6000
+4. Dragos Nitescu - $5720
+5. Bogdan Neacsu - $5040
+6. Carla Szabo - $4620
+7. Alexandru Voicu - $3000
+8. Bogdan Nitescu - $2700
+9. Cristina Jurconi - $1995
+10. Dan Voicu - $1400
+...
