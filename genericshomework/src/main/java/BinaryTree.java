@@ -77,21 +77,25 @@ class BinaryTree<T extends Comparable<T>>{
         }
     }
     //  visit the left child, then the parent and the right child;
-    void traverseInOrder(TreeNode<T> root, List<T> storageList) {
+    List<T> traverseInOrder(TreeNode<T> root, List<T> storageList) {
         if (root != null) {
             traverseInOrder(root.left, storageList);
             storageList.add(root.data);
             traverseInOrder(root.right, storageList);
         }
+        return storageList;
     }
+
     // visit the parent first and then left and right children;
-    void traversePreOrder(TreeNode<T> root, List<T> storageList) {
+    List<T> traversePreOrder(TreeNode<T> root, List<T> storageList) {
         if (root != null) {
             storageList.add(root.data);
             traversePreOrder(root.left, storageList);
             traversePreOrder(root.right, storageList);
         }
+        return storageList;
     }
+
     // visit left child, then the right child and then the parent;
     void traversePostOrder(TreeNode<T> root, List<T> storageList) {
         if (root != null) {
