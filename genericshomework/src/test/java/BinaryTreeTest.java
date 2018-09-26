@@ -7,7 +7,7 @@ import java.util.*;
 
 class BinaryTreeTest {
 
-    class Person implements Comparable<Person> {
+    static class Person implements Comparable<Person> {
         String name;
         int age;
 
@@ -34,7 +34,14 @@ class BinaryTreeTest {
 
         @Override
         public int compareTo(Person o) { return name.compareTo(o.getName()); }
-        // public int compareTo(Person o) { return o.getAge() - age; }
+        //public int compareTo(Person o) { return o.getAge() - age; }
+
+
+        Comparator<Person> byName = (n1, n2) -> {
+            String Name1 = n1.getName();
+            String Name2 = n2.getName();
+            return Name2.compareTo(Name1);
+        };
 
     }
 
@@ -92,15 +99,11 @@ class BinaryTreeTest {
         Assertions.assertEquals(intExpected,intActual);
         System.out.println(intActual);
 
-
         List<Person> personOrderList = new ArrayList<>();
         List<Person> personExpected = personList; //this line can be removed
         Collections.sort(personList);
         List<Person> personActual = instance.traverseInOrder(personBinaryTree.getRoot(),personOrderList);
         Assertions.assertEquals(personExpected,personActual);
         System.out.println(personActual);
-
     }
-
-
 }
