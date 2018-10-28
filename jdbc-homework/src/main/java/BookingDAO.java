@@ -1,6 +1,7 @@
 import java.sql.*;
 import java.util.*;
 import java.util.stream.IntStream;
+
 import static java.util.stream.Collectors.toList;
 
 public class BookingDAO {
@@ -14,13 +15,31 @@ public class BookingDAO {
      * This method creates a sequence and a table in the database.
      * @throws SQLException
      */
-    void createAccomTable () throws SQLException {
+    void createTable () throws SQLException {
 
         try (Statement statement = connection.createStatement()) {
 
-            statement.executeUpdate("create sequence test_seq");
+            //method 1 with sequence
+            /*statement.executeUpdate("create sequence test_seq");
             statement.executeUpdate("create table test (id numeric primary key not null default nextval('accomodation_seq')," +
-                    "type varchar(32),bed_type varchar(32),max_guests int,description varchar(512))");
+                    "type varchar(32),bed_type varchar(32),max_guests int,description varchar(512))");*/
+            //methid 2 without sequence; id serial which does not require to insert and it's auto-incremental; using setAutoComit
+            connection.setAutoCommit(false);
+            statement.executeUpdate("create table test (id serial primary key, title varchar (100) not null, " +
+                    "author varchar (100) not null)");
+            statement.executeUpdate("create table accomodation (id serial primary key, type varchar(32) not null, " +
+                    "bed_type varchar(32) not null, max_guests int, description varchar(512) not null)");
+            statement.executeUpdate("create table room_fair (id serial primary key, value int not null, " +
+                    "season varchar(32) not null)");
+            statement.executeUpdate("create table accomodation_fair_relation (id serial primary key, " +
+                    "id_accomodation int, CONSTRAINT fk_accomodation_id FOREIGN KEY (id_accomodation) REFERENCES accomodation (id),\n" +
+                    "id_room_fair int, CONSTRAINT fk_room_fair_id FOREIGN KEY (id_room_fair) REFERENCES room_fair (id))");
+            statement.executeUpdate("insert into  test (title, author) values ('the book', 'the author');");
+            statement.executeUpdate("insert into  test (title, author) values ('the book1', 'the author1');");
+            statement.executeUpdate("insert into  test (title, author) values ('the book2', 'the author2');");
+            connection.commit();
+            connection.setAutoCommit(true);
+
             System.out.println("Table Created");
 
         } catch (SQLException e) {
@@ -42,7 +61,7 @@ public class BookingDAO {
      */
     public void addAccom (List<Accomodation> accomodation) throws SQLException {
 
-        String sql = "insert into accomodation(id,type,bed_type,max_guests,description) values (?, ?, ?, ?, ?)";
+        String sql = "insert into accomodation(/*id,*/type,bed_type,max_guests,description) values (/*?, */?, ?, ?, ?)";
         for (Accomodation acc : accomodation) {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, acc.getId());
@@ -63,7 +82,7 @@ public class BookingDAO {
 
     void addRoomFair (List<RoomFair> roomFair) throws SQLException {
 
-        String sgl = "insert into room_fair(id,value,season) values (?, ? ,?)";
+        String sgl = "insert into room_fair(/*id,*/value,season) values (/*?, */? ,?)";
         for (RoomFair fair : roomFair) {
             PreparedStatement preparedStatement = connection.prepareStatement(sgl);
             preparedStatement.setInt(1, fair.getId());
@@ -116,11 +135,32 @@ public class BookingDAO {
 
     void clearAllTables () {
         try {Statement statement = connection.createStatement();
-
+            connection.setAutoCommit(false);
             statement.execute("truncate table accomodation cascade");
             statement.execute("truncate table room_fair cascade");
             statement.execute("truncate table accomodation_fair_relation cascade");
+            connection.commit();
+            connection.setAutoCommit(true);
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * This method deletes all tables from the database.
+     * @throws SQLException
+     */
+    void deleteAllTables () throws SQLException {
+        try {
+            Statement statement = connection.createStatement();
+            connection.setAutoCommit(false);
+            statement.execute("drop table accomodation");
+            statement.execute("drop table room_fair");
+            statement.execute("drop table accomodation_fair_relation");
+            statement.execute("drop table test");
+            connection.commit();
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -25,18 +25,20 @@ public class Main {
         FileReader frFairs = new FileReader(f1);
         List<RoomFair> roomFairs = new Reader(frFairs).getFairs();
 
+
         try { Connection connection = DBUtil.getConnection(DBType.POSTGRESQL);
 
             if (connection == null) {
                 System.out.print("No connection");
             } else {
                 BookingDAO bookingDAO = new BookingDAO(connection);
-                //bookingDAO.createAccomTable();
+                //bookingDAO.createTable();
                 //bookingDAO.addAccom(accom);
                 //bookingDAO.addRoomFair(roomFairs);
                 //bookingDAO.addRelation(accom,roomFairs);
-                bookingDAO.clearAllTables();
-                //bookingDAO.getAll();
+                //bookingDAO.clearAllTables();
+                //bookingDAO.deleteAllTables();
+                bookingDAO.getAll();
             }
         } catch (SQLException e) {
             e.printStackTrace();

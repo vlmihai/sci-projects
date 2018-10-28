@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 class BookingDAOTest {
@@ -50,6 +51,7 @@ class BookingDAOTest {
         getRoomFairs().add(18,new RoomFair(18,1000,"season"));
         getRoomFairs().add(19,new RoomFair(19,800,"off-season"));
         BookingDAO test = new BookingDAO(connection);
+        //test.clearAllTables();
         test.addAccom(getAccom());
         test.addRoomFair(getRoomFairs());
         test.addRelation(getAccom(),getRoomFairs());
