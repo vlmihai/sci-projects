@@ -1,0 +1,9 @@
+0,single,single bed,1,one single bed; maximum occupancy 1 ppl
+1,double,queen bed,2,one queen size bed; maximum occupancy 2ppl
+2,king,king,2,one king size bed; maximum occupancy 2ppl
+3,apartment,2 x king,4,two king size beds; maximum occupancy 4ppl
+4,single deluxe,double bed,1,one double bed; maximum occupancy 1ppl
+5,double deluxe,queen size bed and pull-out sofa,2,one queen size bed and one double pull-out sofa; maximum occupancy 2ppl
+6,twin,twin beds,2,two twin beds; maximum occupancy 2ppl
+7,king deluxe,king,2,one king size bed and a small kitchenette
+8,penthouse,2 x king and one pull-out,6,two king size beds and a pull-out; hot-tub for 6ppl; terrace with city view
